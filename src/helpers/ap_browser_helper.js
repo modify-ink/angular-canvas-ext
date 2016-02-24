@@ -28,7 +28,7 @@ canvasExtModule.factory('apBrowserHelper', function () {
 
   if (browser.version === '') {
     for (x in browser) {
-      if (browser[x]) {            
+      if (browser[x]) {
         browser.version = uagent.match(new RegExp("(" + x + ")( |/)([0-9]+)"))[3];
         break;
       }
@@ -40,5 +40,5 @@ canvasExtModule.factory('apBrowserHelper', function () {
     platform: platform,
     retina: window.devicePixelRatio >= 1.5
   };
- 
+
 });
